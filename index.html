@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accueil - Le Rucher Des Javary</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="shortcut icon" href="./assets/img/Bee.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="cursor hidden"></div>
+    <nav>
+        <div class="title">
+            <a href="#"><img src="https://crafatar.com/avatars/090bfd70-1a88-4f8f-a73e-23441601e5c7?overlay=true" alt=""></img></a>
+            <a href="#"><h1>Le Rucher Des Javary</h1></a>
+        </div>
+        <div class="tabs">
+            <a href="#">Accueil</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <header>
+        <div class="color">
+            <h1><span>Le </span><span>Rucher </span><span>Des </span><span>Javary</span></h1>
+            <h4>LE MEILLEUR MIEL DES JAVARY.</h4>
+            <a href="#contact">
+                <button >Contact</button>
+            </a>
+        </div>
+    </header>
+
+    <section class="main">
+        <div class="content">
+            <div class="card">
+                <div class="left">
+                    <h1>Miel de fleurs</h1>
+                    <p>Miel de fleurs! Réalisé par nos petites abeilles.</p>
+                </div>
+
+                <div class="right">
+                    <img src="assets/img/image1.png" alt="">
+                </div>
+            </div>
+
+            <!-- <div class="card">
+                <div class="left">
+                    <h1>Lorem ipsum dolor sit.</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, possimus!</p>
+                </div>
+
+                <div class="right">
+                    <img src="https://crafatar.com/avatars/191007a8-7583-4194-83d8-49c02087b7bc?overlay=true" alt="">
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <form action="process.php" method="POST">
+            <h2>Contactez-nous</h2>
+            <div class="separation"></div>
+            <div class="body-form">
+                <div class="left">
+                    <div class="group">
+                        <label><span style="color:red">*</span> Votre nom</label>
+                        <input name="name" type="text" placeholder="Aurore Nivert" required>
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="group">
+                        <label><span style="color:red">*</span> Votre adresse e-mail</label>
+                        <input name="email" type="mail" placeholder="aurorenivert@gmail.com" required>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="group">
+                        <label>Votre téléphone</label>
+                        <input name="phone" type="text" placeholder="06 09 42 27 60">
+                        <i class="fas fa-mobile"></i>
+                    </div>
+                </div>
+                <i class=""></i>
+                <div class="right">
+                    <div class="group">
+                        <label><span style="color:red">*</span> Objet</label>
+                        <input name="subject" type="text" placeholder="Saisissez votre objet ici..." required>
+                        <i class="fas fa-envelope-open-text"></i>
+                    </div>
+                    <div class="group">
+                        <label><span style="color:red">*</span> Message</label>
+                        <textarea name="message" placeholder="Saisissez votre message ici..." required></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-form" align="center">
+                <button name="sendbutton">Envoyer le message</button>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <div class="image"></div>
+        <div class="color"></div>
+    </footer>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

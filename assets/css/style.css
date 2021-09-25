@@ -1,0 +1,488 @@
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Montserrat&display=swap");
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  cursor: none;
+}
+
+/* --------------- Navigation Bar --------------- */
+nav {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 5px solid #a37d00;
+  z-index: 10;
+  background-color: white;
+}
+
+nav .title {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .title a {
+  cursor: none;
+  text-decoration: none;
+}
+
+nav .title a h1 {
+  color: #d4a300;
+  font-family: "ABeeZee", sans-serif;
+  font-style: italic;
+  font-size: 30px;
+}
+
+nav .title a img {
+  margin-right: 13px;
+  width: 70px;
+  height: 70px;
+}
+
+nav .tabs {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin-top: 3px;
+  margin-left: 300px;
+}
+
+nav .tabs a {
+  cursor: none;
+  text-decoration: none;
+  color: #000;
+  margin-right: 10px;
+  padding-bottom: 5px;
+}
+
+nav .tabs a:hover {
+  border-bottom: 1px solid #b48a00;
+}
+
+nav.sticky {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* --------------- Header --------------- */
+header {
+  background: url("https://media.discordapp.net/attachments/882689141878452305/887030347026550814/background.png?width=1056&height=594");
+  background-size: cover;
+  color: #fff;
+  margin-top: 60px;
+}
+
+header .color {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f1b9015d;
+  padding: 80px;
+}
+
+header .color h1 {
+  font-family: "ABeeZee", sans-serif;
+  font-style: italic;
+  font-size: 50px;
+  text-align: center;
+}
+
+header .color h4 {
+  margin-top: -20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+header .color button {
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  font-size: 17px;
+  font-family: "ABeeZee", sans-serif;
+  outline: none;
+  cursor: none;
+  border-radius: 10px;
+  -webkit-transition: -webkit-transform 0.1s;
+  transition: -webkit-transform 0.1s;
+  transition: transform 0.1s;
+  transition: transform 0.1s, -webkit-transform 0.1s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+header .color button:hover {
+  background-color: whitesmoke;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+/* --------------- Main --------------- */
+.main {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .content .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+
+.main .content .card .left {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  padding: 20px;
+}
+
+.main .content .card.right {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 70%;
+          flex: 0 0 70%;
+}
+
+.main .content .card .right img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  height: calc(594px / 2.5);
+  width: calc(396px / 2.5);
+  margin-top: 5px;
+}
+
+/* --------------- Contact --------------- */
+.contact {
+  margin-top: 250px;
+  padding-bottom: 200px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+form {
+  margin-top: 205px;
+  background-color: #b48a00;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+form h1 {
+  font-size: 20px;
+}
+
+form .separation {
+  width: 100%;
+  height: 3px;
+  border-radius: 5px;
+  background-color: #e2ad00;
+}
+
+form .body-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+form .body-form .group {
+  position: relative;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form .body-form .left .group input {
+  cursor: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin-top: 5px;
+  padding: 10px 5px 10px 30px;
+  border: 1px solid #c9c9c9;
+  outline-color: #e2ad00;
+  border-radius: 5px;
+}
+
+form .body-form .left .group i,
+form .body-form .right .group i {
+  position: absolute;
+  top: 26px;
+  padding: 9px 8px;
+  color: #e2ad00;
+}
+
+form .body-form .right {
+  margin-left: 40px;
+}
+
+form .body-form .right .group {
+  height: 25%;
+}
+
+form .body-form .right .group input {
+  cursor: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin-top: 5px;
+  padding: 10px 5px 10px 30px;
+  border: 1px solid #c9c9c9;
+  outline-color: #e2ad00;
+  border-radius: 5px;
+}
+
+form .body-form .right .group textarea {
+  cursor: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin-top: 5px;
+  padding: 10px 10px 120px 10px;
+  background-color: #fff;
+  border: 2px solid #c9c9c9;
+  outline-color: #e2ad00;
+  border-radius: 5px;
+  resize: none;
+}
+
+form .footer-form button {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin-top: 10px;
+  background-color: #e2ad00;
+  font-size: 15px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  outline: none;
+  cursor: none;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+form .footer-form button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  background-color: #dba801;
+}
+
+/* --------------- Footer --------------- */
+footer .image {
+  position: absolute;
+  padding: 100px 50%;
+  top: 200%;
+  background: url("https://media.discordapp.net/attachments/882689141878452305/887030347026550814/background.png?width=1056&height=594");
+  background-size: cover;
+  background-position: 0px -280px;
+}
+
+footer .color {
+  position: absolute;
+  padding: 100px 50%;
+  top: 200%;
+  background-color: #f1b9015d;
+  background-size: cover;
+  background-position: 0px -280px;
+}
+
+/* --------------- Others --------------- */
+.cursor {
+  cursor: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  z-index: 1000;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #e2ad00;
+  border-radius: 50%;
+  background-image: url("../img/Bee.png");
+  background-size: 20px, 20px;
+  background-repeat: no-repeat;
+  position: fixed;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-animation: cursorAnim .3s infinite alternate;
+          animation: cursorAnim .3s infinite alternate;
+}
+
+.cursorClick {
+  -webkit-animation: cursorClickAnim 1s forwards;
+          animation: cursorClickAnim 1s forwards;
+}
+
+.alert {
+  padding: 15px;
+  margin-top: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.alert-error {
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  color: #a94442;
+}
+
+.alert-success {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #3c763d;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+  z-index: 900;
+}
+
+::-webkit-scrollbar-thumb {
+  background: -webkit-gradient(linear, left top, left bottom, from(#b48a00), to(#dba801));
+  background: linear-gradient(#b48a00, #dba801);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#a37d01), to(#bd9100));
+  background: linear-gradient(#a37d01, #bd9100);
+  cursor: none;
+}
+
+/* --------------- Media --------------- */
+@media screen and (max-width: 920px) {
+  form .body-form .right {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  nav .tabs {
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+}
+
+/* --------------- KeyFrames --------------- */
+@-webkit-keyframes cursorAnim {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+  }
+}
+@keyframes cursorAnim {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+  }
+}
+
+@-webkit-keyframes cursorClickAnim {
+  0% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@keyframes cursorClickAnim {
+  0% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */
