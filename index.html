@@ -39,7 +39,7 @@
             <div class="card">
                 <div class="left">
                     <h1>Miel de fleurs</h1>
-                    <p>Miel de fleurs! Réalisé par nos petites abeilles.</p>
+                    <p>Miel de fleurs ! Réalisé par nos petites abeilles.</p>
                 </div>
 
                 <div class="right">
@@ -60,54 +60,48 @@
         </div>
     </section>
 
-    <section class="contact" id="contact">
-        <form action="process.php" method="POST">
-            <h2>Contactez-nous</h2>
-            <div class="separation"></div>
-            <div class="body-form">
-                <div class="left">
-                    <div class="group">
-                        <label><span style="color:red">*</span> Votre nom</label>
-                        <input name="name" type="text" placeholder="Aurore Nivert" required>
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <div class="group">
-                        <label><span style="color:red">*</span> Votre adresse e-mail</label>
-                        <input name="email" type="mail" placeholder="aurorenivert@gmail.com" required>
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <div class="group">
-                        <label>Votre téléphone</label>
-                        <input name="phone" type="text" placeholder="06 09 42 27 60">
-                        <i class="fas fa-mobile"></i>
-                    </div>
-                </div>
-                <i class=""></i>
-                <div class="right">
-                    <div class="group">
-                        <label><span style="color:red">*</span> Objet</label>
-                        <input name="subject" type="text" placeholder="Saisissez votre objet ici..." required>
-                        <i class="fas fa-envelope-open-text"></i>
-                    </div>
-                    <div class="group">
-                        <label><span style="color:red">*</span> Message</label>
-                        <textarea name="message" placeholder="Saisissez votre message ici..." required></textarea>
+    <div class="contact" id="contact">
+        <div class="contact-header">
+            <div class="title">Contact</div>
+        </div>
+        <div class="contact-body">
+            <section class="location">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2622.2915346026066!2d1.7894858150590593!3d48.909837605037936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e696ff1c24a383%3A0xc6b25e316d394ab4!2s108%20Grande%20Rue%2C%2078580%20Jumeauville!5e0!3m2!1sen!2sfr!4v1633994756510!5m2!1sen!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </section>
+            <section class="contact-us">
+                <div class="contact-row">
+                    <div class="contact-column">
+                        <div>
+                            <i class="fa fa-home"></i>
+                            <span>
+                                <h5>108 Grande Rue, Jumeauville</h5>
+                                <p>78580, Yvelines, France</p>
+                            </span>
+                        </div>
+                        <div>
+                            <i class="fa fa-phone"></i>
+                            <h5><a href="tel:+33">+33 609422760</a></h5>
+                        </div>
+                        <div>
+                            <i class="fa fa-envelope"></i>
+                            <span>
+                                <h5><a href="mailto:aurorenivert@gmail.com">aurorenivert@gmail.com</a></h5>
+                                <p>78580, Yvelines, France</p>
+                            </span>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="footer-form" align="center">
-                <button name="sendbutton">Envoyer le message</button>
-            </div>
-        </form>
-    </section>
+            </section>
+        </div>
+    </div>
 
     <footer>
-        <div class="image"></div>
-        <div class="color"></div>
+        <!-- <div class="image"></div>
+        <div class="color"></div> -->
+        <small class="copyright">&copy; Copyright 2021&ndash;<span class="copyrightyear" id="currentYear">Coucou</span>, Name</small>
     </footer>
 
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    
     <script src="assets/js/app.js"></script>
 </body>
 
