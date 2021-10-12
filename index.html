@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accueil - Le Rucher Des Javary</title>
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="shortcut icon" href="./assets/img/Bee.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/img/favicon.png type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
@@ -15,7 +15,7 @@
     <div class="cursor hidden"></div>
     <nav>
         <div class="title">
-            <a href="#"><img src="https://crafatar.com/avatars/090bfd70-1a88-4f8f-a73e-23441601e5c7?overlay=true" alt=""></img></a>
+            <a href="#"><img src="assets/img/icon.png" alt=""></img></a>
             <a href="#"><h1>Le Rucher Des Javary</h1></a>
         </div>
         <div class="tabs">
@@ -39,75 +39,70 @@
             <div class="card">
                 <div class="left">
                     <h1>Miel de fleurs</h1>
-                    <p>Miel de fleurs! Réalisé par nos petites abeilles.</p>
+                    <p>Miel de fleurs ! Réalisé par nos petites abeilles.</p>
                 </div>
 
                 <div class="right">
-                    <img src="assets/img/image1.png" alt="">
+                    <img src="assets/img/image-card1.png" alt="">
                 </div>
             </div>
 
-            <!-- <div class="card">
+            <div class="card">
                 <div class="left">
                     <h1>Lorem ipsum dolor sit.</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, possimus!</p>
                 </div>
 
                 <div class="right">
-                    <img src="https://crafatar.com/avatars/191007a8-7583-4194-83d8-49c02087b7bc?overlay=true" alt="">
+                    <img src="assets/img/image-card2.png" alt="">
                 </div>
-            </div> -->
+            </div>
         </div>
     </section>
 
-    <section class="contact" id="contact">
-        <form action="process.php" method="POST">
-            <h2>Contactez-nous</h2>
-            <div class="separation"></div>
-            <div class="body-form">
-                <div class="left">
-                    <div class="group">
-                        <label><span style="color:red">*</span> Votre nom</label>
-                        <input name="name" type="text" placeholder="Aurore Nivert" required>
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <div class="group">
-                        <label><span style="color:red">*</span> Votre adresse e-mail</label>
-                        <input name="email" type="mail" placeholder="aurorenivert@gmail.com" required>
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <div class="group">
-                        <label>Votre téléphone</label>
-                        <input name="phone" type="text" placeholder="06 09 42 27 60">
-                        <i class="fas fa-mobile"></i>
+    <div class="contact" id="contact">
+        <div class="contact-header">
+            <div class="title">Contact</div>
+        </div>
+        <div class="contact-body">
+            <section class="location">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2622.2915346026066!2d1.7894858150590593!3d48.909837605037936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e696ff1c24a383%3A0xc6b25e316d394ab4!2s108%20Grande%20Rue%2C%2078580%20Jumeauville!5e0!3m2!1sen!2sfr!4v1633994756510!5m2!1sen!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </section>
+            <section class="contact-us">
+                <div class="contact-row">
+                    <div class="contact-column">
+                        <div>
+                            <i class="fa fa-home"></i>
+                            <span>
+                                <h5>108 Grande Rue, Jumeauville</h5>
+                                <p>78580, Yvelines, France</p>
+                            </span>
+                        </div>
+                        <div>
+                            <i class="fa fa-phone"></i>
+                            <span>
+                                <h5><a href="tel:+336-09-42-27-60">+33 609422760</a></h5>
+                                <p>15h-19h Lundi-Vendredi</p>
+                            </span>
+                        </div>
+                        <div>
+                            <i class="fa fa-envelope"></i>
+                            <span>
+                                <h5><a href="mailto:aurorenivert@gmail.com">aurorenivert@gmail.com</a></h5>
+                                <p>78580, Yvelines, France</p>
+                            </span>
+                        </div>
                     </div>
                 </div>
-                <i class=""></i>
-                <div class="right">
-                    <div class="group">
-                        <label><span style="color:red">*</span> Objet</label>
-                        <input name="subject" type="text" placeholder="Saisissez votre objet ici..." required>
-                        <i class="fas fa-envelope-open-text"></i>
-                    </div>
-                    <div class="group">
-                        <label><span style="color:red">*</span> Message</label>
-                        <textarea name="message" placeholder="Saisissez votre message ici..." required></textarea>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-form" align="center">
-                <button name="sendbutton">Envoyer le message</button>
-            </div>
-        </form>
-    </section>
+            </section>
+        </div>
+    </div>
 
     <footer>
-        <div class="image"></div>
-        <div class="color"></div>
+        <small class="copyright">&copy; 2021&ndash;<span class="copyrightyear" id="currentYear">Coucou</span>, Le Rucher Des Javary</small>
     </footer>
 
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    
     <script src="assets/js/app.js"></script>
 </body>
 
