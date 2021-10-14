@@ -231,15 +231,22 @@ header .color button:hover {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  border-radius: 10px;
 }
 
-.location iframe {
+.location .location-iframe {
+  border: 4px solid black;
+  border-radius: 10px;
+}
+
+.location .location-iframe iframe {
   width: 100%;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   cursor: none;
+  border-radius: 10px;
 }
 
 .contact-us {
@@ -310,6 +317,11 @@ footer small {
 }
 
 /* --------------- Others --------------- */
+.construct {
+  padding: 46px 0px;
+  text-align: center;
+}
+
 .cursor {
   cursor: none;
   pointer-events: none;
@@ -337,25 +349,6 @@ footer small {
 .cursorClick {
   -webkit-animation: cursorClickAnim 1s forwards;
           animation: cursorClickAnim 1s forwards;
-}
-
-.alert {
-  padding: 15px;
-  margin-top: 20px;
-  border: 1px solid transparent;
-  border-radius: 4px;
-}
-
-.alert-error {
-  background-color: #f2dede;
-  border-color: #ebccd1;
-  color: #a94442;
-}
-
-.alert-success {
-  background-color: #dff0d8;
-  border-color: #d6e9c6;
-  color: #3c763d;
 }
 
 .hidden {
